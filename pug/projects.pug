@@ -1,0 +1,21 @@
+.projects
+  .projects__header
+    .projects__header-title Recent Projects
+    .projects__header-text
+      p Morbi a libero eget auctor cursus vitae id tordor. Suspendisse rhoncus. Vestibulum eu ligula lorem.
+      p Vivamus orci sem, consectetur ut vestibulum a, semper ac dui.
+  .projects__carousel.owl-carousel
+    each value in projects
+      .projects__project
+        .project__links
+          button.project__links-button.project__links-link
+          button.project__links-button.project__links-increase
+        img.project__img(src="http://placehold.it/388x202" title="project-image" alt="project-image")
+        .project__about
+          .project__category
+            p.project__category-title= value.title
+            p.project__category-text= value.text
+          .project__likes
+            .project__like
+              button.project__like-img
+            .project__like-count 12

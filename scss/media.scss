@@ -1,0 +1,120 @@
+@media only screen and (min-width: 1215px) {
+  @include width(1200px, 20%, 30%, 40%, 25%, 80%, 12%, 48%, 25%, 55%, 24%, 24%, 50%, 50%, 20%, 80%, 17%, 45%, 80%, 23%);
+  @include height(514px, 225px, 240px, 450px, 450px, 450px, 320px);
+  .details__text{
+    font-size: 25px;
+  }
+  .form__button-clear{
+    padding-right: 5%;
+  }
+  .slide__title{
+    font-size: 60px;
+  }
+
+  .slide__text{
+    font-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 915px) and (max-width: 1214px) {
+  @include width(900px, 23%, 40%, 50%, 25%, 80%, 17%, 49%, 25%, 58%, 24%, 24%, 50%, 50%, 22%, 80%, 17%, 50%, 80%, 23%);
+  @include height(400px, 168px, 240px, 450px, 450px, 430px, 320px);
+  .details__text{
+    font-size: 25px;
+  }
+  .form__button-clear{
+    padding-right: 5%;
+  }
+  .slide__title{
+    font-size: 60px;
+  }
+
+  .slide__text{
+    font-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 725px) and (max-width: 914px) {
+  @include width(720px, 29%, 60%, 65%, 50%, 75%, 22%, 100%, 18%, 55%, 48%, 48%, 100%, 100%, 40%, 80%, 17%, 60%, 75%, 46%);
+  @include height(330px, 133px, 180px, 380px, 380px, 430px, 250px);
+  .details__text{
+    font-size: 20px;
+  }
+  .form__button-clear{
+    padding-right: 5%;
+  }
+  .slide__title{
+    font-size: 60px;
+  }
+
+  .slide__text{
+    font-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 605px) and (max-width: 724px) {
+  @include width(600px, 33%, 66%, 75%, 50%, 70%, 25%, 100%, 21%, 55%, 48%, 48%, 100%, 100%, 40%, 80%, 15%, 70%, 70%, 46%);
+  @include height(280px, 108px, 180px, 380px, 380px, 380px, 250px);
+  .details__text{
+    font-size: 27px;
+  }
+  .form__button-clear{
+    padding-right: 5%;
+  }
+  .slide__title{
+    font-size: 45px;
+  }
+
+  .slide__text{
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 485px) and (max-width: 604px) {
+  @include width(480px, 100%, 90%, 85%, 50%, 67%, 30%, 100%, 25%, 55%, 48%, 48%, 100%, 100%, 40%, 80%, 15%, 80%, 65%, 46%);
+  @include height(256px, 96px, 180px, 370px, 370px, 340px, 250px);
+  .details__text{
+    font-size: 22px;
+  }
+  .form__button-clear{
+    padding-right: 5%;
+  }
+  .slide__title{
+    font-size: 45px;
+  }
+
+  .slide__text{
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 484px) {
+  @include width(98%, 100%, 100%, 90%, 100%, 67%, 32%, 100%, 25%, 57%, 100%, 100%, 100%, 100%, 100%, 48%, 100%, 95%, 60%, 100%);
+  @include height(230px, 83px, 180px, auto, 310px, 450px, 230px);
+  .details__text{
+    font-size: 20px;
+  }
+  .blocks__accordion{
+    .blocks__title{
+      margin-bottom: 4%;
+    }
+  }
+  .blocks__people-words{
+    .blocks__title{
+      margin-bottom: 2%;
+    }
+  }
+  .header__connection-links{
+    margin-right: 6%;
+  }
+  .form__button-clear{
+    padding-right: 5%;
+  }
+  .slide__title{
+    font-size: 35px;
+  }
+
+  .slide__text{
+    font-size: 10px;
+  }
+}

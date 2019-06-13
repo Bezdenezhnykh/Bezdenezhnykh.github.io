@@ -1,0 +1,153 @@
+.projects{
+  width: 100%;
+  background: #23323a;
+}
+
+.projects__project{
+  position: relative;
+  &--active{
+    .project__about{
+      background: #2f424d;
+    }
+    .project__links{
+      display: flex;
+    }
+  }
+}
+
+.projects__header{
+  width: 100%;
+  height: 170px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+}
+
+.projects__header-title{
+  color: #c5c5c5;
+}
+
+.projects__header-text{
+  margin-top: 2%;
+  text-align: center;
+  color: #7c9193;
+  font-size: 12px;
+  p:not(:first-child) {
+    margin-top: 1%;
+  }
+}
+
+.project__links{
+  position: absolute;
+  top: 27%;
+  left: 32%;
+  width: 36%;
+  height: 20%;
+  display: none;
+  justify-content: space-between;
+}
+
+.project__links-button{
+  height: 100%;
+  width: 41.163%;
+  outline: none;
+}
+
+.project__links-link{
+  background: url("../images/projects/icon_link.png");
+  background-size: contain;
+}
+
+.project__links-increase{
+  background: url("../images/projects/icon_increase.png");
+  background-size: contain;
+}
+
+.project__img{
+  width: 100%;
+}
+
+.project__about{
+  background: #2a3b45;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+  &:after{
+    content: '';
+    position: absolute;
+    left: 10%; top: -20px;
+    border: 10px solid transparent;
+    border-bottom: 10px solid #2f424d;
+  }
+}
+
+
+.project__category{
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  text-align: left;
+  font-size: 16px;
+}
+
+.project__category-title{
+  width: 100%;
+  color: #f5f5f5;
+}
+
+.project__category-text{
+  color: #a3adb3;
+  font-size: 10px;
+  margin-top: 5%;
+}
+
+.project__likes{
+  width: 15%;
+  height: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  &--active{
+    .project__like-img{
+      background: url("../images/projects/like_true.png") no-repeat;
+      background-size: contain;
+    }
+  }
+}
+
+.project__like{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  width: 60%;
+}
+
+.project__like-img{
+  height: 100%;
+  width: 100%;
+  background: url("../images/projects/like_false.png") no-repeat;
+  background-size: contain;
+  &:focus{
+    outline: none;
+  }
+  &--active{
+    background: url("../images/projects/like_true.png") no-repeat;
+    background-size: contain;
+  }
+}
+
+.project__like-count{
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  color: #a3adb3;
+}

@@ -1,0 +1,39 @@
+$(document).ready(function(){
+  $(".about-site__slider").owlCarousel({
+	loop:true,
+  dots:false,
+  nav:true,
+  touchDrag:false,
+  mouseDrag:false,
+  items:1
+  });
+});
+
+$(document).ready(function(){
+  $(".projects__carousel").owlCarousel({
+  dots:false,
+  margin:1,
+    responsive:{
+        0:{
+            items:1,
+        },
+        605:{
+            items:2,
+        },
+        910:{
+            items:4,
+        }
+    }
+  });
+});
+
+$(document).ready(function(){
+  $(".footer__twits-slider").owlCarousel({
+	loop:true,
+  dots:false,
+  nav:true,
+  mouseDrag:false,
+  touchDrag:false,
+  items:1
+  });
+});

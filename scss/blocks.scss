@@ -1,0 +1,301 @@
+.details{
+  border-bottom: 1px solid #e0e0e0;
+  border-top: 1px solid #e0e0e0;
+  height: 140px;
+  background: #fcfcfc;
+}
+
+.details__text{
+  line-height: 30px;
+}
+
+.details__text-blue{
+  color: #008fd5;
+}
+
+.details__text-common{
+  color: #23323a;
+}
+
+.details__button{
+  height: 40%;
+  background: #008fd5;
+}
+
+.details__button-text{
+  margin-left: 3%;
+}
+
+.blocks{
+  margin-top: 20px;
+}
+
+.blocks__blogs{
+  width: 100%;
+  height: 450px;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+}
+
+.blocks__title{
+  height: 15%;
+  display: flex;
+  align-items: center;
+  padding-left: 5%;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.blogs__body{
+  width: 100%;
+  height: 77%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+.blogs__blog{
+  height: 46%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.blogs__blog-time{
+  height: 100%;
+  width: 12%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 10px;
+  color: #23323a;
+}
+
+.blog-time__day{
+  font-size: 50px;
+  color: #008fd5;
+}
+
+.blog-time__date{
+  font-weight: 400;
+}
+
+.blog-time__icon{
+  margin-bottom: 50%;
+}
+
+.blogs__blog-body{
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+}
+
+.blog-body__navigation{
+  width: 100%;
+  height: 15%;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.blog-body__navigation-list{
+  display: flex;
+  align-items: center;
+}
+
+.blog-body__nav-item{
+  width: 25%;
+  font-size: 10px;
+  font-weight: 600;
+  color: #23323a;
+}
+
+.blog-body__link{
+  text-decoration: none;
+  letter-spacing: 0px;
+  color: #23323a;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  &--active{
+    color: #008fd5;
+  }
+}
+
+.blog-body__text{
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  text-align: justify;
+}
+.blog-body__text{
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  color: #a3adb3;
+}
+
+.blog-body__text-title{
+  font-size: 18px;
+  font-weight: 400;
+  color: #008fd5;
+}
+
+.blog-body__text-content{
+  margin-top: 3%;
+}
+
+.blocks__accordion{
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+}
+
+.blocks__accordion-body{
+  height: 80%;
+  width: 100%;
+}
+
+.accordion{
+  border-top: 1px solid #e0e0e0;
+}
+
+.accordion__block{
+  width: 100%;
+  &--active{
+  border-bottom: 1px solid #e0e0e0;
+    .accordion__block-header{
+      color: #008fd5;
+    }
+    .accordion__block-body{
+      display: block;
+    }
+  }
+}
+
+.accordion__block-header{
+  border: 1px solid #e0e0e0;
+  border-top: 0;
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+
+.accordion__block-icon{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  color: #008fd5;
+  border-right: 1px solid #e0e0e0;
+}
+
+.accordion__block-title{
+  font-size: 15px;
+  font-weight: 400;
+  width: 97%;
+  padding-left: 3%;
+}
+
+.accordion__block-body{
+  font-size: 12px;
+  font-weight: 400;
+  color: #a3adb3;
+  display: none;
+  padding: 10% 5%;
+  text-align: justify;
+  line-height: 17px;
+  p:not(:last-child){
+    margin-bottom: 10%;
+  }
+}
+
+.blocks__people-words{
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+}
+
+.people-words__person{
+  height: 81px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  background: #23323a;
+  font-size: 16px;
+  &:after{
+    content: '';
+    position: absolute;
+    right: 10%; bottom: -20px;
+    border: 10px solid transparent;
+    border-top: 10px solid #23323a;
+    border-left: 10px solid #23323a;
+  }
+}
+
+.people-words__avatar{
+  height: 100%;
+}
+
+.people-words__person-data{
+  padding-left: 10%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.people-words__person-name{
+  color: #f5f5f5;
+}
+
+.people-words__person-work{
+  font-size: 9px;
+  color: #8cd9ff;
+  margin-top: 5%;
+}
+
+.people-words__body{
+  height: 63%;
+  width: 94%;
+  display: flex;
+  align-items: flex-start;
+  padding: 0 3%;
+}
+
+.people-words__body-text{
+  height: 100%;
+  margin-top: 10%;
+  margin-left: 1%;
+
+}
+
+.people-words__body-img{
+  margin-top: 11%;
+  margin-right: 2%;
+}
+
+.people-words__body-text{
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 17px;
+  color: #a3adb3;
+}
+
+.people-words__body-text-title{
+  font-size: 15px;
+  font-weight: 400;
+  color: #008fd5;
+}
+
+.people-words__body-text-content{
+  margin-top: 10%;
+}

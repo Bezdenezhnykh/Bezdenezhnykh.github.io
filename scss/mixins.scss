@@ -1,0 +1,88 @@
+@mixin width($wrapper, $head-logo, $head-con, $nav-list, $serv, $deta-txt, $deta-btn, $blogs, $blogs-img, $blogs-bl, $accord, $ppl-word, $blue-img, $blue-txt, $team-block, $team-img, $client, $form, $twits, $foot-block) {
+  .wrapper{
+    width: $wrapper;
+  }
+  .header__site-logo{
+    flex-basis: $head-logo;
+  }
+  .header__connection{
+    flex-basis: $head-con;
+  }
+  .navigation__list{
+    flex-basis: $nav-list;
+  }
+  .about-site__service{
+    flex-basis: $serv;
+  }
+  .details__text{
+    flex-basis: $deta-txt;
+  }
+  .details__button{
+    flex-basis: $deta-btn;
+  }
+  .blocks__blogs{
+    flex-basis: $blogs;
+  }
+  .blogs__blog-img{
+    width: $blogs-img;
+  }
+  .blogs__blog-body{
+    width: $blogs-bl;
+  }
+  .blocks__accordion{
+    flex-basis: $accord;
+  }
+  .blocks__people-words{
+    flex-basis: $ppl-word;
+  }
+  .blue-box__picture{
+    flex-basis: $blue-img;
+  }
+  .blue-box__text{
+    flex-basis: $blue-txt;
+  }
+  .our-team__block{
+    flex-basis: $team-block;
+  }
+  .our-team__avatar{
+    width: $team-img;
+  }
+  .clients__client{
+    flex-basis: $client;
+  }
+  .contacts__form{
+    width: $form;
+  }
+  .footer__twits-body{
+    width: $twits;
+  }
+  .footer__body-block{
+    flex-basis: $foot-block;
+  }
+}
+
+@mixin height($slide, $slide-nav, $serv, $accord, $ppl-word, $team-block, $foot-block) {
+  .about-site__slider{
+    height: $slide;
+  }
+  .about-site__slider{
+    .owl-nav{
+      top: $slide-nav;
+    }
+  }
+  .about-site__service{
+    height: $serv;
+  }
+  .blocks__accordion{
+    height: $accord;
+  }
+  .blocks__people-words{
+    height: $ppl-word;
+  }
+  .our-team__block{
+    height: $team-block;
+  }
+  .footer__body-block{
+    height: $foot-block;
+  }
+}

@@ -1,0 +1,151 @@
+.header{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  background: #03678e;
+}
+
+.header__head{
+  background: #ffffff;
+  width: 100%;
+}
+
+.header__site-logo{
+  height: 75px;
+}
+
+.header__connection{
+  width: 30%;
+  height: 75px;
+  display: flex;
+  align-items: center;
+}
+
+.header__connection-phone{
+  width: 48%;
+  display: flex;
+  align-items: center;
+  border-right: 1px solid;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  justify-content: flex-end;
+  padding-right: 2%;
+}
+
+.header__connection-links{
+  width: 50%;
+  height: 100%;
+}
+
+.navigation{
+  height: 55px;
+  background: rgba(255,255,255,0.67);
+}
+
+.navigation__list{
+  display: flex;
+  height: 100%;
+}
+
+.navigation__nav-item{
+  width: 20%;
+  font-size: 10px;
+  font-weight: 600;
+  height: 100%;
+}
+
+.nav-item__link{
+  text-decoration: none;
+  color: #23323a;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%; 
+  display: flex;
+  align-items: center;
+  &--active{
+    color: #008fd5;
+    .nav-item__icon{
+      content: url("../images/navigation/menu_true.png");
+    }
+  }
+}
+
+.nav-item__icon{
+  margin-left: 5%;
+  content: url("../images/navigation/menu_false.png");
+}
+
+.navigation__search{
+  z-index: 5;
+  position: relative;
+  height: 15px;
+  width: 15px;
+  &--hidden{
+    .navigation__search-block{
+      display: none;
+    }
+  }
+  &--active{
+    .navigation__search-block{
+      display: flex;
+    }
+  }
+}
+
+.navigation__search-renamer{
+  background: url("../images/navigation/search.png");
+  &:hover{
+    opacity: 0.7;
+  }
+  height: 100%;
+  width: 100%;
+}
+
+.navigation__search-block{
+  z-index: 6;
+  top: 35px;
+  right: 0;
+  position: absolute;
+  height: 55px;
+  width: 255px;
+}
+
+.navigation__search-field{
+  width: 200px;
+  height: 100%;
+}
+
+.navigation__search-input{
+  height: 100%;
+  outline: none;
+  font-family: Arial;
+  font-size: 15px;
+  color: #23323a;
+  padding: 0;
+  padding-left: 10%;
+  border: none;
+  width: 90%;
+}
+
+.navigation__search-start{
+  width: 55px;
+  height: 100%;
+  background: #23323a;
+  &:after{
+    content: '';
+    position: absolute;
+    right: 13px; top: -16px;
+    border: 8px solid transparent;
+    border-bottom: 8px solid #23323a;
+    border-right: 8px solid #23323a;
+  }
+}
+
+.navigation__search-button{
+  background: url("../images/navigation/search_white.png") no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+
+}

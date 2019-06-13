@@ -1,0 +1,63 @@
+footer.footer
+  .footer__twits.pre-wrapper
+    .wrapper
+      .footer__twits-icon
+        img.footer__twits-img(src="images/footer/footer_bird.png")
+      .footer__twits-body
+        .footer__twits-slider.owl-carousel
+          .footer__twits-slide
+            p One. Vivamus orci sem, consectetur ut vestibulum a, semper ac dui. Sed entum velit vel ipsum bibendum tristique. Ut sem lacus, ttitor putate liquam mi nec hendrerit.
+            p about 5 minutes ago
+          .footer__twits-slide
+            p Two. Vivamus orci sem, consectetur ut vestibulum a, semper ac dui. Sed entum velit vel ipsum bibendum tristique. Ut sem lacus, ttitor putate liquam mi nec hendrerit.
+            p about 8 minutes ago
+  .footer__body.pre-wrapper
+    .wrapper
+      .footer__body-block
+        .footer__site-logo.site-logo
+          img.site-logo__image(title="marine.com" alt="logo" src="images/logo.png")
+          span.site-logo__name MARINE
+        .footer__site-text Vivamus orci sem, consectetur ut vestibulum a, semper ac dui. Proin vulputate aliquam mi nec rerit. Sed entum velit vel ipsum bibendum tristique. Ut sem lacus, ttitor putate liquam mi nec hendrerit.
+      .footer__body-block
+        .footer__body-title Recent Posts
+        - for (var i=0; i<2; i++)
+          .footer__post
+            .footer__post-info
+              .footer__post-info-block DEC 12, 2012 | BY ADMIN
+            .footer__post-title Morbi a libero eget erat auchor
+            .footer__post-content Sed entum velit vel ipsum bibendum em lacus, itor et liquam eget, iaculis id lacus. Praesent tudin. 
+      .footer__body-block
+        .footer__body-title Contacts
+        .footer__contacts-block
+          .footer__contacts-image
+            img.footer__contacts-img(src="images/footer/footer_location.png" title="location" alt="icon")
+          .footer__contacts-text
+            p Phienix Inc.
+            p PO Box 21177
+            p Little Lonsdale St, Melbourne
+            p Victoria 8011 Australia
+        .footer__contacts-block
+          .footer__contacts-image
+            img.footer__contacts-img(src="images/footer/footer_phone.png" title="phone" alt="icon")
+          .footer__contacts-text
+            p Phone: (415) 124-5678
+            p Fax: (415) 124-5678
+        .footer__contacts-block
+          .footer__contacts-image
+            img.footer__contacts-img(src="images/footer/footer_mail.png" title="mail" alt="icon")
+          .footer__contacts-text
+            p support@yourname.com
+      .footer__body-block
+        .footer__body-title Newsletter Signup
+        .footer__connection-explanation By subscribing to our mailing list you will get the latest news from us.
+        form.footer__connection-mail
+          input.footer__input-mail.input(type="text" name="mail")
+          input.footer__input-submit(type="submit" onclick="event.preventDefault()" value="")
+        .footer__body-title Follow us
+        .footer__connection__links.links
+          each value in links
+            a.links__link(href="#")
+              img.links__image(title=value alt="link"-value src="images/connection/logo_"+value+".png")
+  .footer__end.pre-wrapper
+    .wrapper
+      span.footer__end-text © 2013 MARINE, All Rights Reserved

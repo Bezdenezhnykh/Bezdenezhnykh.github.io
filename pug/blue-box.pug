@@ -1,0 +1,16 @@
+.blue-box.pre-wrapper
+  .wrapper
+    .blue-box__picture
+      img.blue_box__picture-back(src="http://placehold.it/298x182" alt="picture-back" title="picture-back")
+      img.blue_box__picture-front(src="http://placehold.it/395x241" alt="picture-frpnt" title="picture-front")
+      img.blue_box__picture-shadow-one(src="images/blue_box/shadow.png" alt="picture-shadow")
+      img.blue_box__picture-shadow-two(src="images/blue_box/shadow_two.png" alt="picture-shadow")
+      img.blue_box__picture-keyboard(src="images/blue_box/keyboard.png" alt="picture-keyboard" title="picture-keyboard")
+    .blue-box__text
+      each value in blue_box_text
+        .blue-box__block
+          img.blue-box__block-img(src="images/blue_box/"+value.img alt="block-icon" title="block-icon")
+          .blue-box__block-text
+            .blue-box__block-title= value.title
+            .blue-box__block-content Proin vulputate aliquam mi nec rerit. <span style="font-weight: 700">Sed entum velit </span>vel ipsum bibendum tristique. Ut sem lacus, ttitor putate liquam mi nec hendrerit.
+            

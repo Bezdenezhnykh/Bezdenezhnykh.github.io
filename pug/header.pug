@@ -1,0 +1,26 @@
+header.header
+  .header__head.pre-wrapper
+    .wrapper
+      .header__site-logo.site-logo
+        img.site-logo__image(title="marine.com" alt="logo" src="images/logo.png")
+        span.site-logo__name MARINE
+      .header__connection
+        .header__connection-phone CALL US: +1 800 450 17 04
+        .header__connection-links.links
+          each value in links
+            a.links__link(href="#")
+              img.links__image(title=value alt="link"+value src="images/connection/logo_"+value+".png")
+  nav.navigation.pre-wrapper
+    .wrapper
+      ul.navigation__list
+        each value in navigation
+          li.navigation__nav-item
+            a.nav-item__link(href='#' onclick="event.preventDefault()")= value
+              img.nav-item__icon(title=value alt=value+"-active")
+      .navigation__search.navigation__search--hidden
+        .navigation__search-block
+          .navigation__search-field
+            input.navigation__search-input(type="text" placeholder="Search...")
+          .navigation__search-start
+            button.navigation__search-button.button
+        .navigation__search-renamer

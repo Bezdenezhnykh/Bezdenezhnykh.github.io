@@ -1,0 +1,16 @@
+.about-site
+  .about-site__slider.owl-carousel
+    each value in slider
+      .slider__slide(class="slide-"+value)
+        img.slide__img(src="images/slider/icon_ship.png" alt="ship")
+        .slide__title NATURAL POWER
+        .slide__text VIVAMUS ORCI SEM, CONSECTETUR UT VESTIBULUM.
+  .about-site__services.pre-wrapper
+    .wrapper
+      each value in services
+        .about-site__service
+          .about-site__service-icon
+            img.servise-icon(title=value.title, alt=value.alt, src="images/services/service_icon_"+value.alt+".png")
+          .about-site__service-text
+            p.servise-text__title= value.title
+            p.servise-text__phrase IT WAS HARD TO MAKE IT SO COOL

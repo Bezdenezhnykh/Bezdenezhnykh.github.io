@@ -1,0 +1,16 @@
+.our-team
+  h3.our-team__title Our Team
+  .our-team__body.pre-wrapper
+    .wrapper
+      - for(var i=0; i<4; i++)
+        .our-team__block
+          img.our-team__avatar(src="http://placehold.it/190x181" title="team-avatar" alt="team-avatar")
+          .our-team__text
+            .our-team__name Sarah Doe
+            .our-team__work CEO
+            .our-team__content Proin vulputate aliquam mi nec rerit. Sed entum velit vel ipsum bibendum tristique.
+          hr.our-team__hr
+          .our-team__links.links
+            each value in links
+              a.links__link(href="#")
+                img.links__image(title=value alt="link"-value src="images/connection/logo_"+value+".png")

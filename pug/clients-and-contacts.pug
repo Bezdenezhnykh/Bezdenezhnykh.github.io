@@ -1,0 +1,18 @@
+.clients.pre-wrapper
+  .wrapper
+    each value in clients
+      a.clients__client(href="#")
+        img.clients__client-img(src="images/clients/"+value title="client" alt="client-img")
+.contacts
+  h3.contacts__title Get In Touch!
+  form.contacts__form.form(method="post")
+    .form__name
+      input.form__name-input.input(type="text" name="name" placeholder="Name*")
+    .form__e-mail
+      input.form__e-mail-input.input(type="text" name="e-mail" placeholder="E-mail*")
+    .form__message
+      textarea.form__message-textarea.input(name="message" placeholder="Message")
+    .form__buttons
+      input.form__button-submit.form__button.button(type="submit" onclick="event.preventDefault()" value="SEND MESSAGE")
+      input.form__button-clear.form__button.button(type="reset" value="CLEAR")
+        

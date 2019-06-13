@@ -1,0 +1,52 @@
+.details.pre-wrapper
+  .wrapper
+    .details__text
+      span.details__text-blue= "A fully responsive theme "
+      span.details__text-common with clean design for your success!
+    button.details__button.button
+      img.details__button-img(src="images/blocks/info.png")
+      span.details__button-text CHECK DETAILS
+.blocks.pre-wrapper
+  .wrapper
+    .blocks__blogs
+      .blocks__title Resent Posts
+      .blogs__body
+        each value in blogs
+          .blogs__blog
+            .blogs__blog-time
+              span.blog-time__day= value.day
+              span.blog-time__date= value.date
+              img.blog-time__icon(src="images/blocks/"+value.img title="blog-icon" alt="blog-icon")
+            img.blogs__blog-img(src="http://placehold.it/130x130" title="blog-image" alt="blog-image")
+            .blogs__blog-body
+              nav.blog-body__navigation
+                ul.blog-body__navigation-list
+                  each value in blog_navigation
+                    li.blog-body__nav-item
+                      a.blog-body__link(href='#' onclick="event.preventDefault()")= value
+              .blog-body__text 
+                p.blog-body__text-title Vivamus orci sem, consectetur ut vestibulum a, semper ac dui.
+                p.blog-body__text-content Proin vulputate aliquam mi nec rerit. Sed entum velit vel ipsum bibendum tristique. Ut sem lacus, ttitor putate liquam mi nec hendrerit.
+    .blocks__accordion
+      .blocks__title Accordion
+      .blocks__accordion-body.accordion
+        - for(var i=0; i<3; i++)
+          .accordion__block 
+            .accordion__block-header
+              .accordion__block-icon +
+              h5.accordion__block-title Vivamus orci sem sectetur.
+            .accordion__block-body 
+              p Sed entum velit vel ipsum bibendum em lacus, itor et liquam eget, iaculis id lacus. Praesent tudin. 
+              p Aiquam eget, iaculis id lacus. Praesent tudin. Ut sem lacus, ttitor putate uam mi nec hendrerit.
+    .blocks__people-words
+      .blocks__title What People Say
+      .people-words__person
+        img.people-words__avatar(src="http://placehold.it/81x81" title="avatar" alt="avatar")
+        .people-words__person-data
+          span.people-words__person-name Sarah Doe
+          span.people-words__person-work CEO. COMPANY.COM
+      .people-words__body
+        img.people-words__body-img(src="images/blocks/quote.png" title="quote" alt="quote")
+        .people-words__body-text
+          p.people-words__body-text-title Vivamus orci sem, consectetur ut vestibulum a, semper ac dui.
+          p.people-words__body-text-content Proin vulputate aliquam mi nec rerit. Sed entum velit vel ipsum bibendum tristique. Ut sem lacus, ttitor putate liquam mi nec hendrerit.
