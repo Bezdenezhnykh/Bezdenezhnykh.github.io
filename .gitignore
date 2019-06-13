@@ -2,6 +2,8 @@
 # Created by https://www.gitignore.io/api/sass,macos,windows,java-web
 # Edit at https://www.gitignore.io/?templates=sass,macos,windows,java-web
 
+.git
+
 ### Java-Web ###
 ## ignoring target file
 target/
